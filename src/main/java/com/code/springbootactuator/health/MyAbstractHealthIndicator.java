@@ -9,7 +9,9 @@ import org.springframework.stereotype.Component;
  */
 @Component("my2")
 public class MyAbstractHealthIndicator extends AbstractHealthIndicator {
+
     private static final String VERSION = "v1.0.1";
+
     @Override
     protected void doHealthCheck(Health.Builder builder) throws Exception {
         int code = 0;
